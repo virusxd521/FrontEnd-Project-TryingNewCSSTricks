@@ -1,0 +1,255 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    
+}
+body, html{
+    height: 100%;
+}
+
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ----- Flex Body ----- */
+
+body {
+    box-sizing: border-box;
+    background-color: rgb(83, 81, 81);
+    display: flex;
+    flex-direction: column;
+  }
+
+
+/* ------ The Navigation Bar ------  */
+
+.header{
+    background-image: linear-gradient(to left,darkturquoise, steelblue);
+    box-shadow: 0px 5px 4px rgb(124, 198, 199);
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+
+
+.ulOfHeader{
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 5%;
+    overflow-wrap: break-word;
+    font-family: Arial, sans-serif;
+    padding: 15px;
+}
+
+.item{
+    margin-top: 10px;
+    
+    
+}
+
+
+.item a{
+    color: white;
+    text-decoration: none;
+    
+    
+}
+
+.item a:hover{
+    border-bottom: solid 2px rgba(240, 228, 240,0.7);
+
+}
+
+/* ----- End ----- */
+
+.main{
+    flex: 1 0 auto; 
+    color: white;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.sectionA{
+    display: flex;
+    text-align: center;
+    border-radius: 30px;
+    margin-top: 40px;
+    
+}
+
+.imgA{
+    opacity: 0.3;
+    margin-top: -150px;
+    border-radius: 20px;
+    width: 80%;
+    height: 100%;
+    box-shadow: 8px 7px rgba(45, 13, 228, 0.4);
+    position: relative;
+}
+
+
+.h1Developer{
+    width: 60%;
+    
+    font-family: "Trebuchet MS", sans-serif;
+    position: relative;
+    font-size: 25px;
+    display: inline-block;
+    padding-bottom: 10px;
+    padding: 20px;
+    margin-top: 0px;
+    border-radius: 20px;
+    z-index: 1;
+    color: white;
+    border-left: 1px solid rgba(45, 13, 228, 0.3); 
+    border-top: 1px solid rgba(45, 13, 228, 0.3);
+    box-shadow: 10px 7px rgba(45, 13, 228, 0.4);
+}
+
+
+
+
+.sectionB{
+    display: flex;
+    flex-direction: column;
+    margin: 3em 0 0 15%;
+    line-height: 28px;
+    
+ 
+}
+
+
+
+.pOfSectionB{
+    font-size: 1.5em;
+    font-family: Verdana, Helvetica, sans-serif;
+    width: 90%;
+}
+
+.ulOfSectionB {
+    margin: 3em 0 3em 0;
+    list-style-type: "\1F44D";
+}
+
+.ulOfSectionB li{
+    margin: 7px 0 0 20px;
+    font-size: 18px;
+}
+
+
+/* ----- Fotter ----- */
+
+.footer{
+    background-image: linear-gradient(to right, #303336 60%,rgba(95, 10, 165, 0.3));
+    display: flex;
+    align-items: stretch;
+    
+}
+
+.twitterCard{
+    font-family: "Trebuchet MS", sans-serif;
+    color: white;
+    display: inline-block;
+    width: 60%;
+    background-color: #303336;
+
+    
+}
+
+
+.onlyTextTwitter{
+    margin-left: 2%;
+}
+
+
+.twitterCard h1{
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+
+.twitterCard p{
+    margin-top: 5px;
+    white-space: pre;
+    font-size: 10px;
+}
+
+.imgB{
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    display: inline;
+    float: left;
+}
+
+
+.imgC{
+    margin: 10px 0 15px 15px;
+    width: 60px;
+    height: 20px;
+}
+
+/* ------ End ------ */
+
+/* ------- Media Queries ------- */
+
+@media only screen and (min-width:800px ){
+
+    .sectionA{
+        width: 90%;
+        margin: auto;
+        margin-top: 70px;
+       
+
+    }
+
+    .ulOfHeader{
+        flex-direction: row;
+        justify-content: flex-start;
+        
+    }
+
+    .item{
+        margin: 8px;
+        word-spacing: -2px;
+    }
+
+}
